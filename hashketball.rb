@@ -102,6 +102,7 @@ def num_points_scored(name)
     if team_info[:players].keys.include?(name)
       points_scored = team_info[:players][name]
 end
+end
   return points_scored
 end
 
