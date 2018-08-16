@@ -97,6 +97,7 @@ def game_hash
 end
 
 def num_points_scored(name)
+  points_scored = 0
   game_hash.each do |location,team_info|
     team_info.each do |team_name,team_colors,player_name|
       if player_name == name
