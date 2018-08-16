@@ -97,12 +97,14 @@ def game_hash
 end
 
 def num_points_scored(name)
-  points_scored = 0
+  points_scored = -1
   game_hash.each do |location,team_info|
     team_info.each do |team_name,team_colors,player_names|
-      puts player_names
+      if player_names.keys.include?(name)
+        points_scored = player_names[:points]
     end
   end
+  return points_scored
 end
 
 
