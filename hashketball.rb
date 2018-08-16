@@ -100,7 +100,7 @@ def num_points_scored(name)
   points_scored = -1
   game_hash.each do |location,team_info|
     team_info.each do |team_name,team_colors,player_names|
-      if player_names == name
+      if player_names.keys.include?(name)
         points_scored = player_names[name]
     end
   end
