@@ -167,4 +167,11 @@ def player_numbers(team)
 end
 
 def player_stats(name)
-  
+  stats = {}
+  game_hash.each do |location,team_info|
+    if team_info[:players].keys.includ?(name)
+      stats = team_info[:players][name]
+    end
+  end
+  return stats
+end
