@@ -165,6 +165,6 @@ def player_numbers(team)
       end
     end
   end
-  return team_colors
+  return jerseys
 end
 
