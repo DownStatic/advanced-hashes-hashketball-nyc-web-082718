@@ -103,7 +103,6 @@ def num_points_scored(name)
       puts player_names
     end
   end
-  return points_scored
 end
 
 
